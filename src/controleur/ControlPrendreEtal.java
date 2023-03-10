@@ -20,18 +20,8 @@ public class ControlPrendreEtal {
 
 	public int prendreEtal(String nomVendeur, String produit, int nbProduit) {
 		//TODO a completer
-		int numeroEtal = -1;
-//		if (!verifierIdentite(nomVendeur)) {
-//			System.out.println("Je suis désolé "+ nomVendeur+ " je vais regarder si je peux vous trouver un étal.");
-//		} else {
-//			System.out.println("Bonjour "+ nomVendeur+ " je vais regarder si je peux vous trouver un étal.");
-//			if (!resteEtals()) {
-//				System.out.println("Désole "+ nomVendeur+ " je n'ai plus d'étal qui ne soit pas déjà occupé.");
-//		
-//			} else {
-//				
-//			}
-//		}
+		int numeroEtal=village.installerVendeur(village.trouverHabitant(nomVendeur), produit, nbProduit);
+		
 		return numeroEtal;
 	}
 
